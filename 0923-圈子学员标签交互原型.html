@@ -82,6 +82,7 @@
     .pc-chat-item.active { background: #2c2d35; }
     .pc-avatar { flex: 0 0 44px; width: 44px; height: 44px; border-radius: 4px; display: grid; place-items: center; color: white; font-weight: 700; background: linear-gradient(145deg,#5b769e,#273143); }
     .pc-avatar.red { background: linear-gradient(145deg,#c43a3a,#791b1b); }
+    .pc-avatar.user-avatar { background: linear-gradient(145deg,#5b8fe8,#2c5fc4); font-size: 18px; }
     .pc-chat-copy { min-width: 0; flex: 1; }
     .pc-chat-copy strong { display: block; color: #f4f5f7; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .pc-chat-copy .line { margin-top: 7px; color: #a5aab3; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -123,7 +124,7 @@
     .pc-system-bubble { position: absolute; top: 2px; right: 6px; max-width: 650px; padding: 8px 13px; color: #e7e8ec; line-height: 19px; font-size: 12px; border-radius: 0 0 5px 5px; background: #28292f; }
     .message { display: flex; gap: 10px; margin: 52px 0 0; align-items: flex-start; }
     .message + .message { margin-top: 18px; }
-    .message .msg-avatar { width: 44px; height: 44px; display: grid; place-items: center; color: #ec1c24; background: #fff; font-weight: 700; font-size: 15px; }
+    .message .msg-avatar { width: 44px; height: 44px; display: grid; place-items: center; color: #fff; background: linear-gradient(145deg,#5b8fe8,#2c5fc4); border-radius: 3px; font-weight: 700; font-size: 18px; }
     .message .msg-meta strong { display: block; color: #eff1f5; font-size: 14px; font-weight: 500; } .message .msg-meta time { display: block; color: #83a1bd; margin-top: 5px; font-size: 12px; }
     .bubble { display: inline-block; margin-top: 7px; padding: 11px 14px; max-width: 530px; color: #f2f2f4; background: #2b2c34; border-radius: 6px; font-size: 13px; }
     .message.outgoing { justify-content: flex-end; margin-top: 118px; } .message.outgoing .msg-avatar { order: 2; color: #fff; background: #758aa0; border-radius: 3px; } .message.outgoing .msg-meta { text-align: right; } .message.outgoing .bubble { text-align: left; }
@@ -273,7 +274,7 @@
         <div class="member-list">
           <div class="member-item"><div class="pc-avatar">◆</div><span class="unread">1</span><div class="member-info"><strong>LD110671-VIP</strong><time>11:07:59</time><p>老师，亨通69.9均100，现在成...</p><div class="member-preview-tags" data-preview-tags='[{"name":"巅峰大师版","category":"产品信息"},{"name":"投诉","category":"风险预警"},{"name":"短线","category":"风格偏好"},{"name":"重点关注","category":"其他"},{"name":"男","category":"基础信息"}]'></div></div></div>
           <div class="member-item"><div class="pc-avatar">山</div><span class="unread">2</span><div class="member-info"><strong>LD162452</strong><time>11:07:46</time><p>老师 我仓位需要调整的吗 今天...</p><div class="member-preview-tags" data-preview-tags='[{"name":"机构版","category":"产品信息"},{"name":"索赔","category":"风险预警"},{"name":"稳健","category":"风格偏好"}]'></div></div></div>
-          <div class="member-item active"><div class="pc-avatar red">南阳<br/>广告</div><div class="member-info"><strong>LD239808</strong><time>11:07:36</time><p>[woshou]</p><div class="member-preview-tags" data-preview-selected="true"></div></div></div>
+          <div class="member-item active"><div class="pc-avatar user-avatar">邱</div><div class="member-info"><strong>LD239808</strong><time>11:07:36</time><p>[woshou]</p><div class="member-preview-tags" data-preview-selected="true"></div></div></div>
           <div class="member-item"><div class="pc-avatar">海</div><span class="unread">1</span><div class="member-info"><strong>LD234389</strong><time>11:07:00</time><p>等通知吧</p><div class="member-preview-tags" data-preview-tags='[{"name":"巅峰版","category":"产品信息"},{"name":"短线","category":"风格偏好"}]'></div></div></div>
           <div class="member-item"><div class="pc-avatar">景</div><div class="member-info"><strong>LD210904</strong><time>11:06:39</time><p>需要提高 不过慢慢来；【投...</p><div class="member-preview-tags" data-preview-tags='[{"name":"巅峰版","category":"产品信息"},{"name":"稳健","category":"风格偏好"},{"name":"新能源","category":"其他"}]'></div></div></div>
           <div class="member-item"><div class="pc-avatar">册</div><div class="member-info"><strong>LD231380</strong><time>11:06:13</time><p>高抛低吸是前面带着大家做的【...</p><div class="member-preview-tags" data-preview-tags='[{"name":"激进","category":"风格偏好"},{"name":"持仓记录","category":"其他"}]'></div></div></div>
@@ -285,10 +286,10 @@
         <div class="pc-chat-header"><strong>LD239808</strong><span>圈子：<span class="circle-name">职业投资训练营</span></span><span class="header-spacer"></span><button class="tag-launcher" data-panel="pcTagPanel">标签 <span class="tag-launcher-count">8</span>⌄</button><span>字号　小　<b>标准</b>　大　特大　☷</span></div>
         <div class="pc-message-area">
           <div class="pc-system-bubble">好 欢迎加入 我们后续多多交流 会位要做好控制 跟着圈子新的教学案例做【投资有风险入市需谨慎，所有案例仅代表和覆盖我司产品服务的所有表现，过往业绩不代表我司服务的未来表现，不构成投资建议据此操作风险自担。业务许可证：ZX0086，卢彬 执业证号 A0660625120046】</div>
-          <div class="message"><div class="msg-avatar">南阳<br/>广告</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-22 18:03:19</time><div class="bubble">好的</div></div></div>
-          <div class="message"><div class="msg-avatar">南阳<br/>广告</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-23 10:36:17</time><div class="bubble">加了中天500股</div></div></div>
+          <div class="message"><div class="msg-avatar">邱</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-22 18:03:19</time><div class="bubble">好的</div></div></div>
+          <div class="message"><div class="msg-avatar">邱</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-23 10:36:17</time><div class="bubble">加了中天500股</div></div></div>
           <div class="message outgoing"><div class="msg-avatar">卢</div><div class="msg-meta"><strong>卢彬老师</strong><time>2026-09-23 11:00:39</time><div class="bubble">好的【投资有风险入市需谨慎，所示案例不代表和覆盖我司产品服务的所有表现，过往业绩不代表我司服务的未来表现，不构成投资建议据此操作风险自担。业务许可证：ZX0086，卢彬 执业证号 A0660625120046】</div></div></div>
-          <div class="message"><div class="msg-avatar">南阳<br/>广告</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-23 11:07:36</time><div class="bubble">握手</div></div></div>
+          <div class="message"><div class="msg-avatar">邱</div><div class="msg-meta"><strong>LD239808</strong><time>2026-09-23 11:07:36</time><div class="bubble">握手</div></div></div>
         </div>
         <div class="pc-editor"><div class="editor-icons">◉　▧</div><div class="editor-placeholder">请输入互动消息，Shift+Enter换行......</div><button class="pc-send">发送</button></div>
         <aside id="pcTagPanel" class="tag-panel pc-tag-panel"></aside>
