@@ -134,7 +134,7 @@
     .pc-statusbar .up { color: #22c580; } .pc-statusbar .down { color: #e6b83e; }
 
     /* Floating tag panel */
-    .tag-panel { position: absolute; z-index: 12; top: 48px; right: 14px; width: 344px; max-height: calc(100% - 78px); overflow: hidden; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,.32); transition: transform .22s ease, opacity .22s ease; }
+    .tag-panel { position: absolute; z-index: 12; top: 48px; right: 14px; width: 344px; max-height: calc(100% - 78px); display: flex; flex-direction: column; overflow: hidden; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,.32); transition: transform .22s ease, opacity .22s ease; }
     .tag-panel.closed { transform: translateX(calc(100% + 18px)); opacity: 0; pointer-events: none; }
     .pc-tag-panel { color: #dfe3ea; border: 1px solid #454852; background: #202229; }
     .biz-tag-panel { color: #303133; border: 1px solid #e5e9ee; background: #fff; }
@@ -142,7 +142,7 @@
     .tag-panel-head strong { font-size: 15px; } .tag-count { margin-left: 8px; color: #8aa9c5; font-size: 11px; }
     .tag-panel-head .head-spacer { flex: 1; }
     .collapse-btn { display: inline-flex; align-items: center; gap: 5px; border: 0; color: inherit; background: transparent; font-size: 11px; opacity: .75; }
-    .tag-scroll { max-height: 620px; overflow-y: auto; padding: 13px 15px 16px; scrollbar-width: thin; }
+    .tag-scroll { flex: 1 1 auto; min-height: 0; max-height: none; overflow-y: auto; padding: 13px 15px 16px; scrollbar-width: thin; }
     .tag-section + .tag-section { margin-top: 14px; }
     .tag-section-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; color: #9da6b1; font-size: 11px; }
     .biz-tag-panel .tag-section-title { color: #8b95a3; }
